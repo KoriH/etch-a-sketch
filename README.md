@@ -1,2 +1,2 @@
 # etch-a-sketch
-doodling in the browser app
+doodling in the browser
