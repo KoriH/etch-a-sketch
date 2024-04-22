@@ -1,93 +1,58 @@
-button {
-    margin: 20px;
-    height: 30px;
-    width: 100px;
-    border-radius: 10px;
-    color: blanchedalmond;
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
 }
 
 body{
-    margin: 0px;
     background-color: beige;
-}
-.header {
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color:bisque;
+    align-items: center;
+    flex-direction: column;
 }
 
-.footer {
-    font-size: 10px;
-    background-color: bisque;
+button {
+    margin: 10px;
+    background-color: grey;
+    color: aliceblue;
+}
+
+.header {
+    display: flex;
+    margin: 10px;
 }
 
 .content {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 88vh;
-}
-
-#color {
-    width: 50px;
-    height: 50px;
 }
 
 #control-panel {
+    margin: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    background-color: lightgray;
     height: 300px;
-    width: 200px;
-    background-color: white;
-    margin: 10px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
 }
 
 #board {
-    height: 300px;
-    width: 400px;
-    background-color: white;
-    margin: 10px;
-    outline: 2px solid rgb(255, 0, 0);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 700px;
+    overflow: hidden;
+    outline: 2px solid red;
 }
 
+#board div{
+    width: 8px;
+    height: 16px;
+    border: 1px solid wheat;
+}
 
-/* Modal styles */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-  
-  /* Modal content */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    text-align: center;
-  }
-  
-  /* Close button */
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-  }
-  
