@@ -13,18 +13,16 @@ body{
 }
 
 button {
-    margin: 10px;
+    margin: 15px;
     background-color: grey;
     color: aliceblue;
-    width: 90%;
+    width: 85%;
     height: 40px;
     border-radius: 4px;
 }
 
-
-
-#color-select {
-    margin: 20px;
+input {
+    margin: 10px;
     width: 80px;
     height: 30px;
     border: none;
@@ -33,16 +31,24 @@ button {
     background-color: transparent;
 }
 
+
+
 .header {
     display: flex;
     margin: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 30px;
 }
 
 .content {
-    
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
 }
      
 .control-panel {
@@ -53,15 +59,13 @@ button {
     height: 400px;
     width: 250px;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
 .color-panel {
     display: flex;
     align-items: center;
 }
-
-
 
 .grid-container {
     margin-left: 50px;
@@ -73,8 +77,8 @@ button {
     grid-template-columns: repeat(16, 1fr); /* 16 columns */
     grid-template-rows: repeat(16, 1fr); /* 16 rows */
     gap: 0; /* No gap between grid items */
-    width: 400px; /* Fills up the available width */
-    height: 400px; /* Fills up the available height */
+    width: 500px; /* Fills up the available width */
+    height: 500px; /* Fills up the available height */
   }
   
   .grid-container > div {
