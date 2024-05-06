@@ -31,8 +31,6 @@ input {
     background-color: transparent;
 }
 
-
-
 .header {
     display: flex;
     margin: 10px;
@@ -56,15 +54,27 @@ input {
     display: flex;
     flex-direction: column;
     background-color: lightgray;
-    height: 400px;
+    height: 500px;
     width: 250px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: start;
+    border-radius: 10px;
+}
+
+.control-panel > * {
+    margin-top: 20px; /* Adjust top margin */
+    margin-bottom: 20px; /* Adjust bottom margin */
 }
 
 .color-panel {
     display: flex;
     align-items: center;
+    margin-top: 40px;
+}
+
+.color-panel.two {
+    margin-top: 10px;
+    margin-bottom: 80px;
 }
 
 .grid-container {
@@ -86,3 +96,14 @@ input {
     border: 1px solid black; /* Example border for each grid item */
   }
   
+  #erase {
+    box-shadow: 2px 5px 1px rgba(0, 0, 0, 0.6);
+  }
+
+  #reset {
+    box-shadow: 2px 5px 1px rgba(0, 0, 0, 0.6);
+  }
+
+  #reset:active {
+    box-shadow: inset 2px 5px 1px rgba(0, 0, 0, 0.6);
+  }

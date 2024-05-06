@@ -33,13 +33,16 @@ for (let i = 0; i < 16 * 16; i++) {
 
 // erase, check if true, if yes then set color to background color
 let isErase = false;
-document.getElementById('erase').addEventListener('click', function() {
+const erase = document.getElementById('erase');
+erase.addEventListener('click', function() {
     isErase = !isErase;
-
     if (isErase) {
         color = gridContainer.style.backgroundColor;
+        erase.style.boxShadow = 'inset 2px 5px 1px rgba(0, 0, 0, 0.6)';
     } else {
         color = colorSelected.value;
+        erase.style.boxShadow = '';
+        erase.style.boxShadow = '2px 5px 1px rgba(0, 0, 0, 0.6);'
     }
 });
 
