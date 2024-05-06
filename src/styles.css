@@ -16,6 +16,21 @@ button {
     margin: 10px;
     background-color: grey;
     color: aliceblue;
+    width: 90%;
+    height: 40px;
+    border-radius: 4px;
+}
+
+
+
+#color-select {
+    margin: 20px;
+    width: 80px;
+    height: 30px;
+    border: none;
+    padding: 0px;
+    outline: none;
+    background-color: transparent;
 }
 
 .header {
@@ -24,35 +39,46 @@ button {
 }
 
 .content {
+    
     display: flex;
     justify-content: center;
     align-items: center;
 }
      
-#control-panel {
-    margin: 50px;
+.control-panel {
+    margin: 0px;
     display: flex;
     flex-direction: column;
     background-color: lightgray;
-    height: 300px;
-    width: 100px;
+    height: 400px;
+    width: 250px;
     justify-content: center;
     align-items: center;
 }
 
-#board {
+.color-panel {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 800px;
-    height: 700px;
-    overflow: hidden;
-    outline: 2px solid red;
+    align-items: center;
 }
 
-#board div{
-    width: 8px;
-    height: 16px;
-    border: 1px solid wheat;
-}
 
+
+.grid-container {
+    margin-left: 50px;
+    border-color: rgb(215, 188, 153);
+    border-style: solid;
+    border-width: 30px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr); /* 16 columns */
+    grid-template-rows: repeat(16, 1fr); /* 16 rows */
+    gap: 0; /* No gap between grid items */
+    width: 400px; /* Fills up the available width */
+    height: 400px; /* Fills up the available height */
+  }
+  
+  .grid-container > div {
+    /* Styles for individual grid items if needed */
+    border: 1px solid black; /* Example border for each grid item */
+  }
+  

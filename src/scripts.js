@@ -1,16 +1,9 @@
-let element = document.getElementById("board");
-let isPressed = false;
-element.addEventListener('mousedown', () => { isPressed = true; });
-element.addEventListener('mouseup', () => { isPressed = false; });
-element.addEventListener('mousemove', (e) => { 
-    if (isPressed) {
-        e.target.style.backgroundColor = 'red';
-    } 
-});
-for (let i = 0; i < 11800; i++) {
-    element.appendChild(document.createElement('div'));
-}
+const gridContainer = document.querySelector('.grid-container');
+let colorSelected = document.getElementById("color-select");
 
+for (let i = 0; i < 16 * 16; i++) {
+  const gridCell = document.createElement('div');
 
-let color = document.getElementById('color');
-element.addEventListener('mousedown', ()=>{document.createElement})
+  gridCell.classList.add('grid-cell');
+  gridContainer.appendChild(gridCell);
+};

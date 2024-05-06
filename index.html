@@ -14,28 +14,26 @@
     </div>
 
     <div class="content">
-        <div id="control-panel">
-            <button id="color">
-                <p>Color</p>
-            </button>
-            <button id="mode">
-                <p>Mode</p>
-            </button>
-            <button id="erase">
-                <p>Erase</p>
-            </button>
-            <button id="reset">
-                <p>Reset</p>
-            </button>
-        </div>
-        <div id="board">
+        <div class="control-panel">
+            <div class="color-panel">
+                <input type="color" id="color-select">
+                <p>Pen Colour</p>
+            </div>
+            
+            <button id="mode">Mode</button>
+            <button id="erase">Erase</button>
+            <button id="reset">Reset</button>
 
         </div>
+        <div class="grid-container"></div>
+        
         <script src="src/scripts.js"></script>
     </div>
 
     <div class="footer">
         <p>Copyright © 2024 korih</p>
     </div>
+
+    
 </body>
 </html>
